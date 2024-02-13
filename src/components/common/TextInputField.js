@@ -1,7 +1,7 @@
 import * as React from "react";
 import { TextInput } from "react-native-paper";
 
-export default function TextInputField(props) {
+const TextInputField = (props) => {
   const { mode, type, label, text, onChangeText, width } = props;
 
   return (
@@ -14,4 +14,6 @@ export default function TextInputField(props) {
       keyboardType={type}
     />
   );
-}
+};
+
+export default TextInputField;

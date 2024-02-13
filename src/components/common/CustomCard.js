@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Card } from "react-native-paper";
 
-export default function CustomCard(props) {
+const CustomCard = (props) => {
   const { mode, flexDirection, width, height, justification, children } = props;
   return (
     <Card style={{ width: width, height: height }} mode={mode}>
@@ -18,4 +18,6 @@ export default function CustomCard(props) {
       </Card.Content>
     </Card>
   );
-}
+};
+
+export default CustomCard;
